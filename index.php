@@ -1,10 +1,10 @@
 <?php
 
-$names = [
-    'Poriia',
-    'Dina',
-    'Milad',
-    'Ali',
+$task = [
+    'title'       => 'Finish Homework',
+    'due'         => 'today',
+    'assigned_to' => 'poriia',
+    'completed'   => false,
 ];
 
 
