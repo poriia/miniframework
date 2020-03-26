@@ -1,10 +1,10 @@
 <?php
 
 require "functions.php";
-$names = [
-    'Poriia',
-    'Dina',
-    'Milad',
-    'Ali',
-  
+
+$pdo = connectDb();
+$tasks = fetchAllTasks($pdo);
+
 require 'index.view.php';
+
+
