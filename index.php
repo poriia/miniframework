@@ -1,11 +1,10 @@
 <?php
 
-$task = [
-    'title'       => 'Finish Homework',
-    'due'         => 'today',
-    'assigned_to' => 'poriia',
-    'completed'   => false,
-];
-
-
+require "functions.php";
+$names = [
+    'Poriia',
+    'Dina',
+    'Milad',
+    'Ali',
+  
 require 'index.view.php';
