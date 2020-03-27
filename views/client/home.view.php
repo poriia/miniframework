@@ -8,6 +8,13 @@
     <title>Tasks</title>
 </head>
 <body>
+<nav>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact US</a></li>
+    </ul>
+</nav>
 <h1>Task for the day : </h1>
 <ul>
     <?php foreach ($tasks as $task): ?>
