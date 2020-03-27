@@ -1,6 +1,4 @@
 <?php
+$tasks = $app['database']->selectAll('tasks');
 
-$tasks = $database->selectAll('tasks');
-
-$view = 'home';
 require 'views/client/home.view.php';
