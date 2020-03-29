@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Core\Database;
+
 class QueryBuilder
 {
     protected $pdo;
@@ -14,7 +16,7 @@ class QueryBuilder
         $statement = $this->pdo->prepare("SELECT * FROM {$table}");
         $statement->execute();
         
-        return $statement->fetchAll(PDO::FETCH_OBJ);
+        return $statement->fetchAll(\PDO::FETCH_OBJ);
     }
     
     public function insert($table, $parameters)
