@@ -1,0 +1,15 @@
+{
+  "name": "poriia/miniframework",
+  "authors": [
+    {
+      "name": "poriia",
+      "email": "poriia@gmail.com"
+    }
+  ],
+  "autoload": {
+    "classmap": [
+      "./"
+    ]
+  },
+  "require": {}
+}
