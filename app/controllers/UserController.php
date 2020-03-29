@@ -1,5 +1,10 @@
 <?php
 
+namespace App\Controllers;
+
+use App\Core\Redirect;
+use App\Core\{App, View};
+
 class UserController
 {
     public function index()
