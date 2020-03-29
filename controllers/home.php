@@ -1,5 +1,5 @@
 <?php
-$tasks = $app['database']->selectAll('tasks');
+$users = $app['database']->selectAll('users');
 $pageTitle = 'Home Page';
 
 require 'views/client/home.view.php';

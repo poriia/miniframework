@@ -1,14 +1,15 @@
 <?php require "partials/header.php"; ?>
-<h1>Task for the day : </h1>
+<h1>Users List : </h1>
 <ul>
-    <?php foreach ($tasks as $task): ?>
+    <?php foreach ($users as $user): ?>
         <li>
-            <?php if ($task->completed): ?>
-                <strike><?= $task->description; ?></strike>
-            <?php else: ?>
-                <?= $task->description; ?>
-            <?php endif; ?>
+            <?= $user->name; ?>
         </li>
     <?php endforeach; ?>
 </ul>
+
+<form action="user/store" method="POST">
+    <input type="text" name="name">
+    <button type="submit">save</button>
+</form>
 <?php require "partials/footer.php"; ?>

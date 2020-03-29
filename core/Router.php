@@ -22,9 +22,9 @@ class Router
         
     }
     
-    public function post($uri)
+    public function post($uri, $controller)
     {
-        $this->routes['POST'][$uri] = $routes;
+        $this->routes['POST'][$uri] = $controller;
     }
     
     public function direct($uri, $methodType)
