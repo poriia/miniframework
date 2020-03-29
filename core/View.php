@@ -2,8 +2,10 @@
 
 class View
 {
-    public static function load($view, $data = [])
+    public static function load($name, $data = [])
     {
-        return "views/{$view}";
+        extract($data);
+        
+        return require "views/{$name}.view.php";
     }
 }
